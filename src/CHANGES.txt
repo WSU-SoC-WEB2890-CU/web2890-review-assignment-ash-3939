@@ -1,0 +1,38 @@
+1. **Navbar**
+   - Changed the hover effect for navigation links to include an underline animation.
+   - Reason: Adds a dynamic and modern feel to the navbar, making it more interactive and visually engaging.
+
+2. **Intro Section**
+   - Added a subtle zoom-in animation to the main heading text on page load.
+   - Reason: Creates a strong first impression and emphasizes the title.
+
+3. **Companies Section**
+   - Add a sliding underline animation under each logo on hover.
+   - Reason: Creates a subtle yet elegant effect that draws attention without altering the logos themselves, maintaining a polished and interactive design.
+
+4. **Services Section**
+   - Modified removing the strict border-right structure and replacing it with a card layout with hover effects.
+   - Reason: The card-like structure with shadows and hover effects modernizes the look and feel of the services section. The images are no longer required to be paired strictly with text and can be placed independently.
+5. **Testimonials Section**
+   - Updated the carousel indicators to custom-designed dots instead of default Bootstrap ones.
+   - Reason: Makes the testimonial section visually consistent with the custom styling of the website.
+
+6. **FAQ Section**
+   - Enhanced the accordion by adding a fade-in animation when a question expands.
+   - Reason: Improves user experience by creating smoother transitions and better focus on content.
+
+7. **Portfolio Section**
+   - adding a subtle shadow to the portfolio items
+   - Reason: This will give the images and content a more elevated, modern feel. 
+
+8. **Get Started Form**
+   - Customized the form buttons with a gradient background and shadow effect on hover.
+   - Reason: Enhances the call-to-action element, making it more appealing to users.
+
+9. **Footer**
+   - Redesigned social media icons with a pulse animation effect.
+   - Reason: Encourages interaction and aligns with the modern, vibrant theme of the website.
+
+10. **Typography**
+    - Changed the default font to a modern sans-serif typeface and adjusted line heights for better readability.
+    - Reason: Improves readability and gives the site a cleaner, more professional appearance.

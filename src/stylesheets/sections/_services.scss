@@ -1,36 +1,88 @@
-@use '../custom'as *;
+@use "../custom" as *;
 
 .services {
   position: relative;
-  padding: 1rem 0;
+  padding: 2rem 0;
 
-  &__content {
-    padding: 1rem;
-    margin-top: 0;
+  .services__content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #ddd;
 
-    p {
-      font-size: 0.8rem;
-
-      @include media-breakpoint-up(lg) {
-        font-size: 1rem;
-      }
-    }
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 5rem;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
     }
 
     .icon {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       color: $primary;
+      margin-bottom: 1rem;
 
-      @include media-breakpoint-up(lg) {
-        font-size: 2.5rem;
+      &:hover {
+        color: $secondary; // Change color on hover for more dynamic feel
+        transform: scale(1.2);
+      }
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      background-color: $white;
+      color: $black;
+      border-radius: 30px;
+      padding: 0.6rem 1rem;
+      border: none;
+      width: 14rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $primary;
+      }
+
+      span {
+        margin-left: 10px;
       }
     }
   }
 
-  &__pic {
-    max-width: 100%;
+  .services__pic {
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      max-height: 300px;
+      object-fit: cover;
+      width: 100%; // Ensure image takes up full width of its container
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .services__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .services__pic {
+    order: -1; // Reverses the order of text and image for large screens
   }
 }

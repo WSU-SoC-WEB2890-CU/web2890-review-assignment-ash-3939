@@ -1,4 +1,4 @@
-@use '../custom'as *;
+@use "../custom" as *;
 
 .companies {
   margin-top: -1px;
@@ -15,10 +15,30 @@
 
     img {
       height: 100%;
+      position: relative;
+      display: inline-block;
 
       &:hover {
         filter: grayscale(120);
       }
     }
+  }
+}
+
+.company-logo {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $secondary; // Adjust to preferred color
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 }

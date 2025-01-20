@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
 .testimonials {
   position: relative;
@@ -54,5 +54,57 @@
       padding-bottom: 2rem;
       text-transform: capitalize;
     }
+  }
+}
+.carousel-indicators li {
+  background-color: $primary;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: $secondary;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  z-index: 10;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: $primary;
+    padding: 1rem;
+    outline: none;
+  }
+
+  .carousel-control-prev {
+    margin-left: 1rem;
+  }
+
+  .carousel-control-next {
+    margin-right: 1rem;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba($white, 0.1);
+    border: none;
+  }
+
+  // Prevent focus border when clicked
+  .carousel-control-prev:focus,
+  .carousel-control-next:focus {
+    outline: none;
+    box-shadow: none; // Removes the box-shadow if it's added by default
   }
 }
